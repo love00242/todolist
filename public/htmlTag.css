@@ -1,0 +1,54 @@
+html, body{
+    height: 100%;
+    
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Microsoft Yahei", Arial, serif;
+}
+
+html {
+    height: 100vh;
+    line-height: 16px;
+    position:fixed;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+  
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    user-select: none;
+}
+
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, a, em, 
+strong, sub, sup, b, u, dl, dt, dd, ol, ul, li,
+table, tbody, tfoot, thead, tr, th, td{
+    color:#575757;
+}
+
+
+button{
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent; 
+    overflow: hidden;
+    outline: none;
+}
+
+input{
+    background: transparent;
+    border: none;
+    color:#575757;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

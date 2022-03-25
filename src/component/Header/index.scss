@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-title {
+        display: flex;
+        align-items: center;
+        h2 {
+            margin-left: 15px;
+            font-size: 28px;
+            font-weight: 550;
+        }
+    }
+    &-right {
+        svg:nth-child(2){
+            margin: 0 0 0 5px;
+        }
+    }
+    svg{
+        font-size: 24px;
+        margin-right: 10px;
+        cursor: pointer;
+        color: #5f6368;
+    }
+}

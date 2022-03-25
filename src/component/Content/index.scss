@@ -1,0 +1,50 @@
+.content {
+    padding: 25px 0 15px;
+    &-search {
+        background: #f3f3f3;
+        border-radius: 5px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        svg {
+            margin-right: 8px;
+        }
+        input {
+            font-size: 16px;
+            width: 100%;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    &-task {
+        margin: 30px 0;
+        width: 95%;
+        small {
+            margin-bottom: 20px;
+            display: flex;
+        }
+        ul {}
+    }
+    &-finish {}
+    &-add {
+        border-radius: 50%;
+        width: 55px;
+        height: 55px;
+        background-color: #b4b4b4;
+        color: #fff;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+        cursor: pointer;
+        position: absolute;
+        bottom: 6%;
+        right: 3%;
+        svg {
+            font-size: 26px;
+        }
+        &:hover {
+            transition: all 0.3s;
+            background-color: #cfcfcf;
+            transform: scale(1.05);
+        }
+    }
+}
