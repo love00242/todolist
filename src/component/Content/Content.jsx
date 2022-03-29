@@ -3,7 +3,11 @@ import { faMagnifyingGlass, faPlus } from '@fortawesome/free-solid-svg-icons';
 import List from "../List";
 import './index.scss';
 
-const Content = () => {
+const Content = ({showPopup}) => {
+    const openPopup = () => {
+        showPopup(true);
+        console.log("props");
+    };
     return (
         <div className="content">
             <div className="content-search">
@@ -21,7 +25,7 @@ const Content = () => {
                 <small>已完成</small>
                 <ul><List /><List /><List /><List /></ul>
             </div>
-            <button className="content-add"><FontAwesomeIcon icon={faPlus} /></button>
+            <button className="content-add" onClick={openPopup}><FontAwesomeIcon icon={faPlus} /></button>
         </div>
     )
 }

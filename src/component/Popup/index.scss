@@ -1,0 +1,76 @@
+.popup {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom: 0;
+    z-index: 99;
+    &-mask {
+        background: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        z-index: -1;
+        position: fixed;
+        top: 0; 
+        bottom: 0;
+    }
+    &-content {
+        background-color: #8a8a8b;
+        width: 700px;
+        height: 300px;
+        border-radius: 25px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-title {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 5px;
+            svg {
+                position: absolute;
+                right: 10px;
+                font-size: 30px;
+                top: -5px;
+                cursor: pointer;
+            }
+            h2 {
+                font-size: 20px;
+            }
+        }
+        textarea {
+            background-color: transparent;
+            resize: none;
+            border: 0;
+            width: 100%;
+            color: #fff;
+            font-size: 16px;
+            &:focus {
+                outline: none;
+            }
+            &::placeholder {
+                color: #eee;
+            }
+        }
+        &-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+            button {
+                border-radius: 10px;
+                width: 55px;
+                height: 35px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            svg {
+                font-size: 22px;
+                cursor: pointer;
+            }
+        }
+    }
+}
